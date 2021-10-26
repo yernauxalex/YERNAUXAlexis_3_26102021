@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* fichiers qui définissent les fondations de votre site,
+ par exemple la police de caractères et les normes
+  que vous voulez appliquer sur tout votre site, 
+  telles que le box-sizing */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*
+html{
+
+}
+
+body{
+
+}*/
+/*Exemple */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+  font-style: italic;
+}
+
+/*@import "./components/buttons";*//*# sourceMappingURL=main.css.map */
