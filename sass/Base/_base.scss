@@ -13,3 +13,10 @@ html{
 body{
 
 }*/
+.wrapper{
+    margin: 0;
+    @include desktop{
+        margin: 0 3%;
+        overflow: auto;
+    }
+}

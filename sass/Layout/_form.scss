@@ -1,0 +1,38 @@
+/* Form */
+.form{
+    &__localisation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: #EAEAEA;
+
+        input{
+            text-align: center;
+            border: none;
+            width: 35%;
+            background-color: #EAEAEA;
+            font-family: "Roboto";
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .fa-map-marker-alt::before{
+            font-size: 16px;
+        }
+    }
+    &__reservation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+        background-color: #F6F6F6;
+        h2{
+            text-align: center;
+            margin: 0 15% 10px 15%;
+        }
+        p{
+            text-align: center;
+            margin: 0 10% 10px 10%;
+        }
+    }
+}
