@@ -1,5 +1,6 @@
 /* Form */
 .form{
+    font-family: "Roboto";
     &__localisation{
         display: flex;
         justify-content: center;
@@ -12,7 +13,7 @@
             border: none;
             width: 35%;
             background-color: #EAEAEA;
-            font-family: "Roboto";
+            
             font-weight: bold;
             font-size: 16px;
         }
@@ -32,7 +33,17 @@
         }
         p{
             text-align: center;
-            margin: 0 10% 10px 10%;
+            margin: 0 10% 20px 10%;
         }
+    }
+    /* A déplacer dans Components/button */ 
+    &__submit{
+        border: none;
+        border-radius: 50px ;
+        background-color: $couleur-primaire;
+        color: white;
+        padding: 12px;
+        margin: 0 25% 40px 25%;
+        box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.20);
     }
 }
