@@ -1,0 +1,28 @@
+/* Footer */ 
+.footernav{
+    background-color: #353535;
+    padding:  0 20px 20px 20px;
+    @include link;
+    color: white;
+    h1{
+        font-size: 20px;
+        font-weight: 100;
+        padding: 20px 0 20px 0 ;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__obj{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        color: white;
+        padding-bottom: 11px;
+        .align{
+            padding-right: 7px;
+        }
+    }
+    &__link{
+        color: white;
+    }
+}
