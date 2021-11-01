@@ -9,3 +9,16 @@
         @content;        
     }
 }
+@mixin link {
+    &__link{
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            color: inherit;
+        }
+        &:active{
+            text-decoration: none;
+            color: inherit;
+        }   
+    }
+}

@@ -1,0 +1,45 @@
+/* Card */
+.card{
+    display: inline-block;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #fff;
+    border-radius: 26px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(171, 171, 171, 0.3), 0 6px 6px rgba(190, 190, 190, 0.3);
+    @include link;
+    &__img{
+        width: 100%;
+        height: 175px; /*temp*/
+        object-fit: cover;
+        object-position: 50% bottom;
+        /*min-width*/
+    }
+    &__new{
+        position: absolute;
+        top: 4%;
+        right: 5%;
+        padding: 4px 12px 4px 12px;
+        border-radius: 2px;
+        background-color: $color-tertiary;
+        color: #0B8E6E;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    &__desc{
+        height: 75px;
+        padding: 0 2% 2% 4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+    }
+    &__icon{
+        font-size: 24px;
+        padding-right: 10px;
+    }
+}

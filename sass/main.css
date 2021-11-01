@@ -41,12 +41,80 @@ body {
   line-height: 1.7;*/
 }
 
+p {
+  color: black;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 100;
 }
 
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
 /*@import "./components/buttons";*/
+/* Card */
+.card {
+  display: inline-block;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #fff;
+  border-radius: 26px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(171, 171, 171, 0.3), 0 6px 6px rgba(190, 190, 190, 0.3);
+}
+.card__link {
+  text-decoration: none;
+}
+.card__link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.card__link:active {
+  text-decoration: none;
+  color: inherit;
+}
+.card__img {
+  width: 100%;
+  height: 175px;
+  /*temp*/
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% bottom;
+     object-position: 50% bottom;
+  /*min-width*/
+}
+.card__new {
+  position: absolute;
+  top: 4%;
+  right: 5%;
+  padding: 4px 12px 4px 12px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  color: #0B8E6E;
+  font-weight: 600;
+  font-size: 13px;
+}
+.card__desc {
+  height: 75px;
+  padding: 0 2% 2% 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+}
+.card__icon {
+  font-size: 24px;
+  padding-right: 10px;
+}
+
 /* Header */
 header {
   margin-top: 10px;
@@ -56,6 +124,45 @@ header {
 }
 header h1 {
   text-align: center;
+}
+
+/* Footer */
+.footernav {
+  background-color: #353535;
+  padding: 0 20px 20px 20px;
+  color: white;
+}
+.footernav__link {
+  text-decoration: none;
+}
+.footernav__link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.footernav__link:active {
+  text-decoration: none;
+  color: inherit;
+}
+.footernav h1 {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 20px 0 20px 0;
+}
+.footernav__list {
+  list-style: none;
+}
+.footernav__obj {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  color: white;
+  padding-bottom: 11px;
+}
+.footernav__obj .align {
+  padding-right: 7px;
+}
+.footernav__link {
+  color: white;
 }
 
 /* Form */
@@ -165,4 +272,21 @@ header h1 {
   padding: 4px 8px;
   background: #9356DC;
   color: #fff;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  margin-top: 45px;
+  padding: 50px 20px 50px 20px;
+}
+.restaurants h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.containerRestaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  row-gap: 18px;
 }/*# sourceMappingURL=main.css.map */

@@ -57,3 +57,18 @@
         color: #fff;
     }
 }
+.restaurants{
+    background-color: $color-background;
+    margin-top: 45px;
+    padding: 50px 20px 50px 20px;
+    h2{
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+}
+.containerRestaurant{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 18px;
+}
