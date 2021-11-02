@@ -1,0 +1,15 @@
+/* Page menu */ 
+.menuimg{
+    width: 100%;
+    object-fit: cover;
+
+}
+.menu{
+    width: 100%;
+    background-color: $color-background;
+    border-radius: 28px 28px 0 0;
+    padding-top: 30px;
+}
+.menuheader{
+    display: flex;
+}
