@@ -1,24 +1,21 @@
-
 @mixin desktop {
-    @media screen and (min-width: map-get($breakpoints, desktop )){
+    @media screen and (min-width: map-get($breakpoints, desktop )) {
         @content;
     }
 }
 @mixin tablette {
-    @media screen and (min-width:map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop )){
-        @content;        
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop )) {
+        @content;
     }
 }
 @mixin link {
-    &__link{
+    text-decoration: none;
+    &:hover {
         text-decoration: none;
-        &:hover{
-            text-decoration: none;
-            color: inherit;
-        }
-        &:active{
-            text-decoration: none;
-            color: inherit;
-        }   
+        color: inherit;
+    }
+    &:active {
+        text-decoration: none;
+        color: inherit;
     }
 }
