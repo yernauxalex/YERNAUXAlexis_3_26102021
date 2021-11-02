@@ -154,15 +154,19 @@ header h1 {
 .footernav__obj {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 10px;
-  color: white;
   padding-bottom: 11px;
+}
+.footernav__obj .fas {
+  font-size: 14px;
 }
 .footernav__obj .align {
   padding-right: 7px;
 }
 .footernav__link {
   color: white;
+  font-size: 17px;
 }
 
 /* Form */
