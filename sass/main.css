@@ -125,6 +125,22 @@ header {
 header h1 {
   text-align: center;
 }
+header .headerLink {
+  position: absolute;
+  top: 3%;
+  left: 6%;
+  font-size: 19px;
+  text-decoration: none;
+  color: black;
+}
+header .headerLink:hover {
+  text-decoration: none;
+  color: inherit;
+}
+header .headerLink:active {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* Footer */
 .footernav {
