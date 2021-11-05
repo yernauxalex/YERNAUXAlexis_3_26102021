@@ -60,11 +60,24 @@ h3 {
   border-radius: 50px;
   background-color: #9356DC;
   color: white;
-  font-weight: 500;
-  padding: 12px;
-  margin: 0 25% 40px 25%;
+  font-weight: 600;
+  font-size: 16px;
   box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
   background: linear-gradient(175deg, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+}
+
+.-btnmenu {
+  display: block;
+  /*margin: 30px 0 0 36%; /* provisoire */
+  /*padding: 12px 28px 12px 28px; /* provisoire */
+  margin: 2.25rem auto 0 auto;
+  padding: 1.125em 3.125em 1.125em 3.125em;
+}
+
+.-btnform {
+  padding: 15px 14px 15px 14px;
+  margin: 0 24% 40px 24%;
+  font-size: 13px;
 }
 
 /* Card */
@@ -243,11 +256,12 @@ header .headerLink:active {
 .fonctliste {
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  row-gap: 15px;
-  margin: 20px 17% 20px 0;
+  /*justify-content: center;
+  align-items: center;*/
+  flex-flow: column wrap;
+  row-gap: 20px;
+  /*margin: 20px 17% 20px 0;*/
+  margin: 20px 20px 20px 20px;
 }
 .fonctliste__lien {
   text-decoration: none;
@@ -263,8 +277,10 @@ header .headerLink:active {
   position: relative;
   background: #F6F6F6;
   border-radius: 20px;
-  padding: 28px 40px 28px 40px;
+  /*padding: 28px 40px 28px 40px;*/
+  padding: 25px 0 25px 8px;
   width: 100%;
+  /*100%*/
   min-width: 30px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
@@ -276,12 +292,15 @@ header .headerLink:active {
 }
 .fonctliste__obj i {
   flex-grow: 1;
+  font-size: 20px;
+  width: 36px;
   background: transparent;
   text-align: center;
   color: #7E7E7E;
 }
 .fonctliste__obj p {
   flex-grow: 2;
+  font-weight: 600;
 }
 .fonctliste__num {
   position: absolute;
@@ -411,14 +430,4 @@ header .headerLink:active {
   border-radius: 50px;
   /*padding: ;*/
   /*animation*/
-}
-
-.-btnmenu {
-  display: block;
-  /*margin: 30px 0 0 36%; /* provisoire */
-  /*padding: 12px 28px 12px 28px; /* provisoire */
-  margin: 2.25rem auto 0 auto;
-  padding: 1.125em 3.125em 1.125em 3.125em;
-  font-weight: 600;
-  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */
