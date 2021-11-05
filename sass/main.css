@@ -60,9 +60,11 @@ h3 {
   border-radius: 50px;
   background-color: #9356DC;
   color: white;
+  font-weight: 500;
   padding: 12px;
   margin: 0 25% 40px 25%;
   box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(175deg, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
 }
 
 /* Card */
@@ -311,15 +313,18 @@ header .headerLink:active {
 /* Page menu */
 .menuimg {
   width: 100%;
+  height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .menu {
+  display: block;
   width: 100%;
   background-color: #F6F6F6;
   border-radius: 28px 28px 0 0;
   padding-top: 30px;
+  transform: translateY(-60px);
 }
 
 .menuHeader {
@@ -342,9 +347,9 @@ header .headerLink:active {
 
 .menuContainer {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  /*a revoir */
+  flex-direction: column;
+  /*flex-flow: row wrap;
+  justify-content: space-evenly; /*a revoir */
 }
 .menuContainerSub {
   margin-top: 30px;
@@ -353,13 +358,22 @@ header .headerLink:active {
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
-  /*text-indent: -40px;*/
+  text-indent: 10px;
+}
+.menuContainerSub h3::after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 7px;
+  background-color: #99e2d0;
+  height: 3px;
+  width: 50px;
 }
 .menuContainerSub__list {
   display: flex;
   flex-flow: column wrap;
-  gap: 10px;
-  padding: 10px 0px 10px 0px;
+  gap: 15px;
+  padding: 10px 10px 10px 10px;
 }
 .menuContainerSub__obj {
   background-color: #fff;
@@ -399,10 +413,12 @@ header .headerLink:active {
   /*animation*/
 }
 
-.menuBtn {
+.-btnmenu {
   display: block;
-  margin: 10% 40% 10% 40%;
-  /* provisoire */
-  padding: 10px 10px 10px 10px;
-  /* provisoire */
+  /*margin: 30px 0 0 36%; /* provisoire */
+  /*padding: 12px 28px 12px 28px; /* provisoire */
+  margin: 2.25rem auto 0 auto;
+  padding: 1.125em 3.125em 1.125em 3.125em;
+  font-weight: 600;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */
