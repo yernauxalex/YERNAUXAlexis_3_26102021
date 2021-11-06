@@ -246,14 +246,14 @@ header .headerLink:active {
 }
 
 /* Menu fonctionnement */
-.fonct {
+.funct {
   padding-top: 20px;
 }
-.fonct h2 {
+.funct h2 {
   text-indent: 20px;
 }
 
-.fonctliste {
+.functlist {
   list-style: none;
   display: flex;
   /*justify-content: center;
@@ -263,14 +263,14 @@ header .headerLink:active {
   /*margin: 20px 17% 20px 0;*/
   margin: 20px 20px 20px 20px;
 }
-.fonctliste__lien {
+.functlist__link {
   text-decoration: none;
   color: black;
 }
-.fonctliste__lien:visited {
+.functlist__link:visited {
   color: black;
 }
-.fonctliste__obj {
+.functlist__obj {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -284,13 +284,13 @@ header .headerLink:active {
   min-width: 30px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
-.fonctliste__obj:hover {
+.functlist__obj:hover {
   background-color: #F5EDFF;
 }
-.fonctliste__obj:hover .fas {
+.functlist__obj:hover .fas {
   color: #9356DC;
 }
-.fonctliste__obj i {
+.functlist__obj i {
   flex-grow: 1;
   font-size: 20px;
   width: 36px;
@@ -298,11 +298,11 @@ header .headerLink:active {
   text-align: center;
   color: #7E7E7E;
 }
-.fonctliste__obj p {
+.functlist__obj p {
   flex-grow: 2;
   font-weight: 600;
 }
-.fonctliste__num {
+.functlist__num {
   position: absolute;
   top: 31%;
   left: -13px;
