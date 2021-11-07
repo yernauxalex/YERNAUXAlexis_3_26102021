@@ -166,6 +166,11 @@ header .headerLink:active {
   color: inherit;
 }
 
+.headermenu {
+  border-bottom: none;
+  box-shadow: none;
+}
+
 /* Footer */
 .footernav {
   background-color: #353535;
@@ -226,6 +231,9 @@ header .headerLink:active {
   font-weight: bold;
   font-size: 16px;
 }
+.form__localisation input:focus {
+  outline: none;
+}
 .form__localisation .fa-map-marker-alt::before {
   font-size: 16px;
 }
@@ -243,6 +251,7 @@ header .headerLink:active {
 .form__reservation p {
   text-align: center;
   margin: 0 10% 20px 10%;
+  font-weight: 300;
 }
 
 /* Menu fonctionnement */
@@ -375,18 +384,21 @@ header .headerLink:active {
 }
 .menuContainerSub h3 {
   text-transform: uppercase;
+  font-size: 18px;
   font-weight: 400;
   position: relative;
   text-indent: 10px;
+  padding-bottom: 10px;
 }
 .menuContainerSub h3::after {
   position: absolute;
   content: "";
   bottom: -3px;
-  left: 7px;
+  left: 10px;
   background-color: #99e2d0;
   height: 3px;
   width: 50px;
+  margin-bottom: 5px;
 }
 .menuContainerSub__list {
   display: flex;
@@ -407,7 +419,12 @@ header .headerLink:active {
 .menuContainerSub__text {
   flex: 1;
 }
+.menuContainerSub__text h4 {
+  font-size: 17px;
+  padding-bottom: 3px;
+}
 .menuContainerSub__text p {
+  font-size: 14px;
   font-weight: 400;
 }
 .menuContainerSub__price {
