@@ -43,6 +43,10 @@ body{
   }
 }
 
+.-menuwr {
+  background-color: #F6F6F6;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
@@ -388,6 +392,11 @@ header .headerLink:active {
   flex-direction: column;
   justify-content: space-around;
   row-gap: 18px;
+}
+
+.containerRestaurant__link:nth-child(2) img {
+  -o-object-position: 50% 61%;
+     object-position: 50% 61%;
 }
 
 /* Page menu */
