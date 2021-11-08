@@ -16,7 +16,7 @@ body{
 .wrapper{
     margin: 0;
     @include desktop{
-        margin: 0 3%;
+        margin: 0;
         overflow: auto;
     }
 }
