@@ -1,3 +1,98 @@
+/* Animations */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes feelIt {
+  0% {
+    fill-opacity: 0;
+  }
+  30% {
+    fill-opacity: 0.3;
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+  60% {
+    fill-opacity: 0.8;
+    transform: scale(1.05);
+    transform-origin: center;
+  }
+  75% {
+    fill-opacity: 0.05;
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+  90% {
+    fill-opacity: 0.8;
+    transform: scale(1.05);
+    transform-origin: center;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+@keyframes feelIt {
+  0% {
+    fill-opacity: 0;
+  }
+  30% {
+    fill-opacity: 0.3;
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+  60% {
+    fill-opacity: 0.8;
+    transform: scale(1.05);
+    transform-origin: center;
+  }
+  75% {
+    fill-opacity: 0.05;
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+  90% {
+    fill-opacity: 0.8;
+    transform: scale(1.05);
+    transform-origin: center;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
 *,
 *::after,
 *::before {
@@ -19,7 +114,7 @@ body{
 }
 @media screen and (min-width: 992px) {
   .wrapper {
-    margin: 0 3%;
+    margin: 0;
     overflow: auto;
   }
 }
@@ -64,6 +159,11 @@ h3 {
   font-size: 16px;
   box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.2);
   background: linear-gradient(175deg, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 5px 10px rgba(0, 0, 0, 0.14);
+  background: linear-gradient(175deg, rgba(255, 121, 218, 0.9), rgba(175, 122, 240, 0.9));
 }
 
 .-btnmenu {
@@ -137,8 +237,24 @@ h3 {
 .card__icon {
   font-size: 24px;
   padding-right: 10px;
+  /* Test anim heart
+  &:hover{
+      display: none;
+  }*/
+}
+.card__icon::before {
+  color: black;
 }
 
+/* Test anime heart
+.-solid{
+    position: absolute;
+    right: 8px;
+    display: none;
+    &:hover{
+        display: inline;
+    }
+}*/
 /* Header */
 header {
   margin-top: 10px;
@@ -182,8 +298,20 @@ header .headerLink:active {
   font-weight: 100;
   padding: 20px 0 20px 0;
 }
+@media screen and (min-width: 992px) {
+  .footernav h1 {
+    text-align: center;
+  }
+}
 .footernav__list {
   list-style: none;
+}
+@media screen and (min-width: 992px) {
+  .footernav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 .footernav__obj {
   display: flex;
@@ -415,6 +543,26 @@ header .headerLink:active {
   justify-content: space-between;
   overflow: hidden;
   /* Animation here */
+}
+.menuContainerSub__obj:nth-child(-n+4) {
+  -webkit-animation: fadeIn 1s ease-in-out both;
+          animation: fadeIn 1s ease-in-out both;
+}
+.menuContainerSub :nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.menuContainerSub :nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.menuContainerSub :nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.menuContainerSub :nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 .menuContainerSub__text {
   flex: 1;
