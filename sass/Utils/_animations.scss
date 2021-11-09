@@ -21,3 +21,14 @@
         visibility: hidden;
     }
 }
+.-heartanim{
+    &::before {
+        color: black;
+        transition: color 1s ease-out;
+    }
+    &:hover::before{
+        color: $color-primary;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

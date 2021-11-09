@@ -37,6 +37,16 @@
     visibility: hidden;
   }
 }
+.-heartanim::before {
+  color: black;
+  transition: color 1s ease-out;
+}
+.-heartanim:hover::before {
+  color: #9356DC;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 *,
 *::after,
 *::before {
@@ -177,24 +187,8 @@ h3 {
 .card__icon {
   font-size: 24px;
   padding-right: 10px;
-  /* Test anim heart
-  &:hover{
-      display: none;
-  }*/
-}
-.card__icon::before {
-  color: black;
 }
 
-/* Test anime heart
-.-solid{
-    position: absolute;
-    right: 8px;
-    display: none;
-    &:hover{
-        display: inline;
-    }
-}*/
 /* Loader */
 .loader {
   position: fixed;
@@ -205,8 +199,8 @@ h3 {
   height: 100%;
   background-color: #F6F6F6;
   z-index: 10;
-  -webkit-animation: fadeOut 1s ease-out forwards 6s;
-          animation: fadeOut 1s ease-out forwards 6s;
+  -webkit-animation: fadeOut 1s ease-out forwards 4s;
+          animation: fadeOut 1s ease-out forwards 4s;
 }
 .loaderLogo {
   display: flex;
