@@ -13,11 +13,12 @@
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 5px 10px rgba(0, 0, 0, 0.14);
         background: linear-gradient(175deg, rgba(255, 121, 218, 0.9), rgba(175, 122, 240, 0.9));
     }
+    @include tablet{
+        max-width: 20%;
+    }
 }
 .-btnmenu{ 
     display: block;
-    /*margin: 30px 0 0 36%; /* provisoire */
-    /*padding: 12px 28px 12px 28px; /* provisoire */
     margin: 2.25rem auto 0 auto;
     padding: 1.125em 3.125em 1.125em 3.125em;
     
@@ -26,4 +27,5 @@
     padding: 15px 14px 15px 14px;
     margin: 0 24% 40px 24%;
     font-size: 13px;
+    
 }

@@ -6,12 +6,12 @@
 }
 .menu {
     display: block;
+    margin: 0 auto;
     width: 100%;
     background-color: $color-background;
     border-radius: 28px 28px 0 0;
     padding-top: 30px;
     transform: translateY(-60px);
-    max-width: 1000px;
     &Header {
         width: 100%;
         display: flex;
@@ -33,8 +33,11 @@
 .menuContainer {
     display: flex;
     flex-direction: column;
-    /*flex-flow: row wrap;
-    justify-content: space-evenly; /*a revoir */
+    @include tablet{
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
     &Sub {
         margin-top: 30px;
         h3 {

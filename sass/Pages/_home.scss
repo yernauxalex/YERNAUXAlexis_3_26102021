@@ -3,17 +3,24 @@
     padding-top: 20px;
     h2{
         text-indent: 20px;
+        @include tablet{
+            text-align: center;
+        }
     }
 }
 .functlist{
     list-style: none;
     display: flex;
-    /*justify-content: center;
-    align-items: center;*/
     flex-flow: column wrap;
     row-gap: 20px;
-    /*margin: 20px 17% 20px 0;*/
     margin: 20px 20px 20px 20px;
+    @include tablet{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
     &__link{
         text-decoration: none;
         color: black;
@@ -28,11 +35,19 @@
         position: relative;
         background: #F6F6F6;
         border-radius: 20px;
-        /*padding: 28px 40px 28px 40px;*/
         padding: 25px 0 25px 8px;
-        width: 100%; /*100%*/
+        width: 100%; 
         min-width: 30px;
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
+        @include tablet{
+            min-width: min-content;
+            max-width: 280px;
+        }
+        @include desktop{
+            min-width: min-content;
+            max-width: 350px;
+            padding: 25px 10px 25px 14px;
+        }
         &:hover{
             background-color: #F5EDFF;
             .fas{
@@ -70,6 +85,9 @@
     h2{
         margin-bottom: 25px;
         font-size: 28px;
+        @include tablet{
+            text-align: center;
+        }
     }
 }
 .containerRestaurant{
@@ -77,6 +95,15 @@
     flex-direction: column;
     justify-content: space-around;
     row-gap: 18px;
+    @include tablet{
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    @include desktop{
+        gap: 60px;
+    }
 }
 .containerRestaurant__link:nth-child(2) img {
     object-position: 50% 61%;
