@@ -41,11 +41,11 @@
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
         @include tablet{
             min-width: min-content;
-            max-width: 280px;
+            max-width: 250px;
         }
         @include desktop{
             min-width: min-content;
-            max-width: 350px;
+            max-width: 300px;
             padding: 25px 10px 25px 14px;
         }
         &:hover{

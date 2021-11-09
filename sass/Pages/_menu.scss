@@ -72,7 +72,6 @@
             display: flex;
             justify-content: space-between;
             overflow: hidden;
-            /* Animation here */
             &:nth-child(-n + 4) {
                 animation: fadeIn 1s ease-in-out both;
             }

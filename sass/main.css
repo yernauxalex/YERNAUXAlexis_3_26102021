@@ -80,9 +80,6 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  /*font-size: 2rem;
-  font-weight: 100;
-  line-height: 1.7;*/
 }
 
 p {
@@ -415,7 +412,7 @@ header .headerLink:active {
     min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
-    max-width: 280px;
+    max-width: 250px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -423,7 +420,7 @@ header .headerLink:active {
     min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
-    max-width: 350px;
+    max-width: 300px;
     padding: 25px 10px 25px 14px;
   }
 }
@@ -576,7 +573,6 @@ header .headerLink:active {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  /* Animation here */
 }
 .menuContainerSub__obj:nth-child(-n+4) {
   -webkit-animation: fadeIn 1s ease-in-out both;
